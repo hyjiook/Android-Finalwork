@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GameActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="-5dp"
+            android:gravity="center"
+            android:text="2048"
+            android:textColor="@color/score_backgroud"
+            android:textSize="60dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/score_backgroud"
+                    android:gravity="center"
+                    android:text="得分"
+                    android:textColor="@color/word_white"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/tvScore"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/score_backgroud"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/word_white"
+                    android:textSize="20dp" />
+                <Button
+                    android:id="@+id/music"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/music" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/score_backgroud"
+                    android:color="@color/black"
+                    android:gravity="center"
+                    android:text="最高分"
+                    android:textColor="@color/word_white"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/tvBestScore"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/score_backgroud"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/word_white"
+                    android:textSize="20dp" />
+                <Button
+                    android:id="@+id/btnNewGame"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/newgame" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="149dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="-43dp"
+        android:gravity="left"
+        android:text="抗疫特别版"
+        android:textColor="@color/score_backgroud"
+        android:textSize="27dp" />
+
+    <FrameLayout
+        android:id="@+id/gameContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <com.example.finalwork.GameView
+            android:id="@+id/gameView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </com.example.finalwork.GameView>
+
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="320dp"
+            android:layout_height="240dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="430dp"
+            android:src="@drawable/ic_launcher_background" />
+    </FrameLayout>
+
+</LinearLayout>

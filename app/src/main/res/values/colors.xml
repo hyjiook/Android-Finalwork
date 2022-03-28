@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFB573</color>
+    <color name="colorPrimaryDark">#BF9970</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="black">#000000</color>
+    <color name="white">#7AFFFFFF</color>
+    <color name="word_white">#FFFFFF</color>
+    <color name="background">#FFE9B2</color>
+    <color name="buttom">#FFBC73</color>
+    <color name="score_backgroud">#A6720A</color>
+</resources>
